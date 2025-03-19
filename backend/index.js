@@ -16,11 +16,11 @@ app.use(express.json())
 app.use(cors())
 
 // option 2: Allow Custom Origins
-app.use({
-    origin: 'http://localhost:3000',
-    methods: ['GET','POST','PUT','DELETE'],
-    allowedHeaders: ['Content-Type']
-})
+// app.use({
+//     origin: 'http://localhost:3000',
+//     methods: ['GET','POST','PUT','DELETE'],
+//     allowedHeaders: ['Content-Type']
+// })
 
 app.use('/books',booksRoute)
 
